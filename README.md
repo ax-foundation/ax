@@ -41,26 +41,10 @@ Every position **must** be finalized.
 
 ---
 
-## AX1 Core Spec v0.1 (RU)
-
-AX1 — это протокол залоговой ликвидности под SOL без ликвидаций по цене.
-
-Ключевые свойства:
-- Залог: SOL
-- LTV: 90%
-- Комиссия только по времени
-- Отсутствие цен и оракулов
-- Обязательный финал каждой позиции
-
-Полная спецификация описывает:
-- mint / redeem
-- auto-buyback
-- ограничения выпуска
-- экономические инварианты
 
 ---
 
-## AX1 Core Spec v0.1 (EN)
+## AX1 Core Spec v0.1 
 
 AX1 is a SOL-collateralized liquidity protocol with no price-based liquidations.
 
