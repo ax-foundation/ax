@@ -1,18 +1,36 @@
-# AX — Protocol Overview
+# AX — Liquidity Without Liquidations
 
 **AX** is a collateralized liquidity protocol designed to provide liquidity
-without price-based liquidations.
+without price-based liquidations, price oracles, or governance intervention.
 
-AX1 is the first implementation, focused exclusively on SOL.
+AX focuses on deterministic rules, mandatory position finalization,
+and market-driven settlement via buyback & burn.
 
 ---
 
-## What is AX1
+## Table of Contents
 
-AX1 allows users to lock SOL as collateral and receive AX liquidity
-without exposure to forced liquidation due to market volatility.
+- [Overview](#overview)
+- [How AX1 Works](#how-ax1-works)
+- [Core Principles](#core-principles)
+- [Protocol Flow](#protocol-flow)
+- [AX1 Specification](#ax1-specification)
+- [AXP Pre-Token](#axp-pre-token)
+- [Project Status](#project-status)
+- [Links & Community](#links--community)
+- [Disclaimer](#disclaimer)
+
+---
+
+## Overview
+
+**AX1** is the first implementation of the AX protocol.
+
+It allows users to lock SOL as collateral and obtain liquidity
+without the risk of forced liquidation due to price volatility.
 
 Key idea:
+
 > Liquidity without liquidations.  
 > No price oracles. No governance. Mandatory finalization.
 
@@ -20,14 +38,14 @@ Key idea:
 
 ## How AX1 Works
 
-1. User deposits SOL into the protocol
-2. AX is minted with fixed LTV (90%)
-3. User uses AX freely
-4. Position is finalized in one of two ways:
+1. A user deposits SOL as collateral  
+2. AX is minted with a fixed LTV (90%)  
+3. AX can be freely used or traded  
+4. The position is finalized in one of two ways:
    - Voluntary redeem by the user
-   - Automatic buyback and burn by the protocol
+   - Automatic market buyback and burn by the protocol
 
-Every position **must** be finalized.
+Every position **must** reach final settlement.
 
 ---
 
@@ -35,59 +53,17 @@ Every position **must** be finalized.
 
 - No price oracles
 - No price-based liquidations
-- Immutable rules
+- Immutable parameters
 - Mandatory position finalization
 - Buyback & burn as the only settlement mechanism
 
----
-
-
----
-
-## AX1 Core Spec v0.1 
-
-AX1 is a SOL-collateralized liquidity protocol with no price-based liquidations.
-
-Key properties:
-- Collateral: SOL
-- LTV: 90%
-- Time-based fee only
-- No price oracles
-- Mandatory position finalization
-
-The full specification defines:
-- mint / redeem
-- auto-buyback
-- issuance throttling
-- economic invariants
+AX does not attempt to predict or control market prices.
+It enforces rules and lets the market resolve outcomes.
 
 ---
 
-## AXP (Pre-Token)
+## Protocol Flow
 
-AXP is a pre-token used to mark early participation in the AX project.
+### High-Level Lifecycle
 
-AXP:
-- is NOT part of AX1 protocol
-- provides NO profit rights
-- has NO guaranteed conversion
-- does NOT affect protocol economics
 
-AXP exists only as a participation marker.
-
----
-
-## Project Status
-
-- AX1 Core Spec v0.1 — completed
-- Public documentation — live
-- Development — upcoming
-- Testnet — not launched yet
-
----
-
-## Disclaimer
-
-AX is an experimental protocol.
-Nothing here constitutes financial advice.
-Use at your own risk.
