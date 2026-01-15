@@ -1,69 +1,56 @@
+
 # AX — Liquidity Without Liquidations
 
 **AX** is a collateralized liquidity protocol designed to provide liquidity
 without price-based liquidations, price oracles, or governance intervention.
 
-AX focuses on deterministic rules, mandatory position finalization,
-and market-driven settlement via buyback & burn.
+AX enforces deterministic rules and mandatory position finalization,
+allowing the market — not the protocol — to resolve outcomes.
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [How AX1 Works](#how-ax1-works)
-- [Core Principles](#core-principles)
-- [Protocol Flow](#protocol-flow)
-- [AX1 Specification](#ax1-specification)
-- [AXP Pre-Token](#axp-pre-token)
-- [Project Status](#project-status)
-- [Links & Community](#links--community)
-- [Disclaimer](#disclaimer)
-
----
-
-## Overview
+## What is AX1
 
 **AX1** is the first implementation of the AX protocol.
 
 It allows users to lock SOL as collateral and obtain liquidity
-without the risk of forced liquidation due to price volatility.
+without exposure to forced liquidation due to market volatility.
 
-Key idea:
-
-> Liquidity without liquidations.  
-> No price oracles. No governance. Mandatory finalization.
-
----
-
-## How AX1 Works
-
-1. A user deposits SOL as collateral  
-2. AX is minted with a fixed LTV (90%)  
-3. AX can be freely used or traded  
-4. The position is finalized in one of two ways:
-   - Voluntary redeem by the user
-   - Automatic market buyback and burn by the protocol
-
-Every position **must** reach final settlement.
-
----
-
-## Core Principles
-
+Key properties:
 - No price oracles
-- No price-based liquidations
-- Immutable parameters
-- Mandatory position finalization
-- Buyback & burn as the only settlement mechanism
-
-AX does not attempt to predict or control market prices.
-It enforces rules and lets the market resolve outcomes.
+- No liquidations
+- Immutable rules
+- Mandatory final settlement via market buyback & burn
 
 ---
 
-## Protocol Flow
+## Documentation
 
-### High-Level Lifecycle
+- **AX1 Core Specification (PDF)**  
+  https://ax-foundation.github.io/docs/AX1_Core_Spec_v0.1.pdf
 
+- **AX Architecture Overview (PDF)**  
+  https://ax-foundation.github.io/docs/AX_Architecture_Overview.pdf
 
+- **AXP Pre-Token Description (PDF)**  
+  https://ax-foundation.github.io/docs/AXP_Pre_Token.pdf
+
+*(Documents describe protocol logic, invariants, and design rationale in detail.)*
+
+---
+
+## Links & Community
+
+- Telegram: https://t.me/axprotocol  
+- X (Twitter): https://x.com/axprotocol  
+- GitHub: https://github.com/ax-foundation  
+
+---
+
+## Disclaimer
+
+AX is an experimental protocol.
+This page and linked documents are provided for informational purposes only
+and do not constitute financial or investment advice.
+
+Use at your own risk.
