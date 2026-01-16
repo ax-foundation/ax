@@ -42,7 +42,6 @@ Key properties:
 ## Links & Community
 
 - Telegram:  https://t.me/AX_Foundation
-//- X (Twitter): https://x.com/axprotocol  
 - GitHub: https://github.com/ax-foundation  
 
 ---
